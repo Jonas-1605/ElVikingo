@@ -1,0 +1,143 @@
+body{
+    background-image: linear-gradient(45deg, red, black, red, black);
+    margin: 0;
+    padding: 10px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 0 0 5px white;
+}
+h2{
+    text-decoration: underline;
+    color: white;
+}
+h3, ul{
+    color: white;
+}
+.opciones summary{
+  background: #333;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid black;
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+}
+.opciones summary::after{
+    content: "Ver Opciones";
+    font-size: 15px;
+}
+.opciones[open] summary::after{
+    content: "Cerrar Opciones";
+    font-size: 15px;
+}
+p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.sagrada-madre{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    text-align: center;
+}
+
+.bombitas{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    align-items: flex-start;
+    text-align: center;
+}
+.bomb{
+    margin-left: 50px;
+}
+.aromanza{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.parimal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.bangladesh{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    text-align: center;
+}
+.nag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tibetanosblack, .momentos, .parimalgolden, .bangladeshx15, .bangladeshx100, .triplex50, .aromas, .palosanto, .natural, .botanico, .elementos, .bombitasx4, .bombitasx8, .bombacarbon, .neutro, .satya{
+    width: 300px;
+    height: 300px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 15px;
+}
+
+.boton-whatsapp{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+.icono-whatsapp{
+    width: 35px;
+    height: 35px;
+    fill: white;
+}
+@media (max-width: 1024px){
+    .sagrada-madre, .bombitas, .bangladesh{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        width: 100%;
+        gap: 20px;
+    }
+    .aromanza{
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    html, body{
+        overflow-x: hidden;
+    }
+    }
+
+ 
+
+
